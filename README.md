@@ -26,11 +26,14 @@ Una clase es un modelo o plantilla para crear objetos. Define:
 Estado: A través de propiedades.
 Comportamiento: A través de métodos.
 Ejemplo en Kotlin:
+
+```Kotlin
 class Persona(val nombre: String, var edad: Int) {
     fun saludar() {
         println("Hola, soy \$nombre y tengo \$edad años.")
     }
 }
+```
 
 Propiedades y Métodos
 Propiedades: Describen el estado del objeto.
