@@ -51,7 +51,7 @@ class Persona(val nombre: String) {
     }
 }
 ```
-**Referencia this**
+**Referencia this**  
 Permite referirse al objeto actual, accediendo a sus miembros.
 Ejemplo:
 ```kotlin
