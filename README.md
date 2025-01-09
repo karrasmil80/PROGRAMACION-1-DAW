@@ -4,7 +4,7 @@
 
 La Programación Orientada a Objetos (POO) es un paradigma que organiza el código en torno a objetos que representan entidades con propiedades (atributos) y comportamientos (métodos). Este enfoque permite crear software más modular, reutilizable y fácil de mantener.
 
-**Conceptos básicos**  
+## **Conceptos básicos**  
 - Herencia: Permite crear nuevas clases basadas en clases existentes, compartiendo y extendiendo su funcionalidad.
 - Cohesión: Mide cuán relacionados están los elementos dentro de un módulo. Alta cohesión implica código bien organizado.
 - Abstracción: Oculta detalles complejos y expone solo lo esencial.
@@ -13,14 +13,14 @@ La Programación Orientada a Objetos (POO) es un paradigma que organiza el códi
 - Encapsulamiento: Restringe el acceso directo a los detalles internos de un objeto, proporcionando una interfaz controlada.
 - Ocultación: Define qué elementos son accesibles (públicos) y cuáles están restringidos (privados).
 
-**Objetos**  
+## **Objetos**  
 Un objeto se define como una entidad con:  
 - Estado: Representado por atributos.
 - Comportamiento: Representado por métodos.
 - Identidad: Unicidad del objeto.
 - Mensajes: Los objetos se comunican mediante métodos, formando una interfaz que define las partes visibles del objeto.
 
-**Clases**  
+## **Clases**  
 Una clase es un modelo o plantilla para crear objetos. Define:
 - Estado: A través de propiedades.
 - Comportamiento: A través de métodos.
@@ -34,12 +34,12 @@ class Persona(val nombre: String, var edad: Int) {
 }
 ```
 
-**Propiedades y Métodos**  
+## **Propiedades y Métodos**  
 - Propiedades: Describen el estado del objeto.
 - Métodos: Definen su comportamiento.
 - Accesibilidad: Controlada con modificadores públicos, privados o protegidos.
 
-**Constructores**  
+## **Constructores**  
 - Primario: Declarado en la cabecera de la clase.
 - Secundario: Definido en el cuerpo de la clase.
 Ejemplo en Kotlin:
@@ -51,7 +51,7 @@ class Persona(val nombre: String) {
     }
 }
 ```
-**Referencia this**  
+## **Referencia this**  
 Permite referirse al objeto actual, accediendo a sus miembros.
 Ejemplo:
 ```kotlin
@@ -62,7 +62,7 @@ class Persona(val nombre: String) {
 }
 ```
 
-**Getters y Setters**  
+## **Getters y Setters**  
 - Getters: Recuperan el valor de una propiedad.
 - Setters: Modifican el valor de una propiedad.
 Ejemplo en Kotlin:
@@ -75,7 +75,7 @@ class Persona {
         }
 }
 ```
-**Igualdad e Identidad en Kotlin**  
+## **Igualdad e Identidad en Kotlin**  
 - Igualdad (==): Compara contenido usando equals.
 - Identidad (===): Compara referencias de objetos.
 Ejemplo en Kotlin
@@ -85,7 +85,7 @@ val b = Persona("Juan", 30)
 println(a == b)  // true (contenido)
 println(a === b) // false (referencias)
 ```
-**Clases de Datos en Kotlin**  
+## **Clases de Datos en Kotlin**  
 Las Data Classes son ideales para almacenar datos y ofrecen implementaciones automáticas de:
 equals(), hashCode(), toString() y copy(): 
 Ejemplo en Kotlin
@@ -99,7 +99,7 @@ Ejemplo:
 val persona1 = Persona("Ana", 25)
 val persona2 = persona1.copy(edad = 26)
 ```
-**Desestructuración de Objetos**  
+## **Desestructuración de Objetos**  
 Proceso de descomponer un objeto en sus propiedades individuales usando componentN.
 Ejemplo en Kotlin
 ```kotlin
@@ -114,7 +114,7 @@ try {
     println("Error: \${e.message}")
 }
 ```
-**Override**  
+## **Override**  
 Reemplaza métodos o propiedades heredados.
 Ejemplo en Kotlin
 ```kotlin
@@ -126,14 +126,14 @@ class Perro : Animal() {
     override fun sonido() = println("Ladrido")
 }
 ```
-**Enum Classes**  
+## **Enum Classes**  
 Definen conjuntos de constantes predefinidas.
 Ejemplo en Kotlin
 ```kotlin
 enum class Dia { LUNES, MARTES, MIÉRCOLES, JUEVES, VIERNES }
 ```
 
-**CRUD: Operaciones Básicas**
+## **CRUD: Operaciones Básicas**
 - Create: Crear registros.
 - Read: Leer registros.
 - Update: Actualizar registros.
