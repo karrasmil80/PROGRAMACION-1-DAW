@@ -1,9 +1,13 @@
 package karrasmil80.models
 
-import org.example.models.Jugador
+import karrasmil80.models.Jugador
 
-//Clase hijo de Jugador
-class JugadorPortero (dorsal: Int) : Jugador(dorsal) , Iparar {
+/**
+ * Clase hijo de Jugador
+ * @param dorsal Dorsal que identifica al jugador
+ */
+
+class JugadorPortero (dorsal: Int) : Jugador(dorsal) , Idistribuir, Idefender, Iparar, Imarcar {
 
     //Comportamiento entrenar
     override fun entrenar() {
@@ -19,4 +23,21 @@ class JugadorPortero (dorsal: Int) : Jugador(dorsal) , Iparar {
     override fun jugar() {
         println("Estoy jugando como jugador portero ")
     }
+
+    //Comportamiento defender
+    override fun defender() {
+        println("Estoy jugando de defensa siendo portero ")
+    }
+
+    //Comportamiento marcar
+    override fun marcar() {
+        println("Estoy jugando de delantero siendo portero ")
+    }
+
+    //Comportamiento distribuir
+    override fun distribuir() {
+        println("Estoy jugando de centro campista siendo portero ")
+    }
+
+
 }

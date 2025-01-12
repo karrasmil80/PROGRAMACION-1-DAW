@@ -1,6 +1,13 @@
-package org.example.models
+package karrasmil80.models
 
 import karrasmil80.models.EquipoFutbol
+
+/**
+ * @param nombre Nombre del entrenador
+ * @param apellidos Apellidos del entrenador
+ * @param añosExperiencia Tiempo en el oficio del entrenador
+ */
+
 //Clase entrenador que hereda el comportamiento entrenar
 class Entrenador (nombre : String, apellidos: String, añosExperiencia : Int) : EquipoFutbol() {
 
