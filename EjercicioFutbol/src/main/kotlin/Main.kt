@@ -6,8 +6,6 @@ import karrasmil80.models.JugadorDelantero
 import karrasmil80.models.JugadorPortero
 import org.example.models.Entrenador
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
     /**
